@@ -220,9 +220,15 @@ input:focus{
   background-image: url(../images/sprite.svg);
 }
 .icon-confirm-purchase {
-  width: 32px;
-  height: 32px;
-  background-position: 0 0;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    transform: scale(3);
+    top: 25%;
+    margin-bottom: 25px;
 }
 .icon-filter {
   width: 32px;
@@ -440,6 +446,10 @@ input.search-form-control:focus {
     height: 100%;
     margin-bottom: 8%;
 }
+.col-md-9 .stad-area{
+    width: 75%;
+    height: auto;
+}
 #subPageTow .big-stad-img img{
     width: 100%;
     height: 100%;
@@ -525,8 +535,17 @@ li {
     animation-duration: 300ms;
     animation-fill-mode: both;
 }
-.seat.available input[type=checkbox]:checked + label {
+.seat.available input[type=checkbox]:hover + label {
     box-shadow: 0px 2px 15px #888888;
+    background: #00e600;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+}
+.seat.available input[type=checkbox]:checked+ label{
+    background:  #4dd2ff;
+    box-shadow: 0px 2px 15px #4dd2ff;
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
     animation-duration: 300ms;
@@ -596,3 +615,65 @@ li {
 #circle.gray{
   background: #eee;
 }
+#blockShow {
+    margin-top: 13px;
+    position: relative;
+    right: 5%;
+    font-weight: bold;
+}
+#BlockConetent .large{
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+    margin: 37px 0;
+}
+.tick-con{
+  padding-top: 34px;
+}
+.tickets{
+  margin-top: 10px;
+}
+.tickets li{
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.tickets li a{
+  color: #666666;
+}
+.tickets li a:hover{
+  color:  #ff5c33;
+}
+.tickets li.active a{
+  color: #000;
+  border-bottom: 1px solid #ff5c33;
+  font-weight: bold;
+}
+#BlockConetent .bottom-details  .org-button{
+  width: 75%;
+}
+
+#subPageThree .bottom-details{
+  bottom: 0;
+}
+.table-checkout{
+  padding: 20px 0;
+}
+.table-checkout .price{
+  font-size: 27px;
+}
+#subPagefour{
+    background: #000;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.78;
+    right: 0px;
+}
+.purshase-done{
+  position: relative;
+  top: 50%;
+  color: #fff;
+}
+

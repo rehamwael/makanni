@@ -15,7 +15,7 @@
             <div class="text-center left-coloum" id="LeftNav">
               <h1>M</h1>
               <ul>
-                <li><a href="#">Matches</a></li>
+                <li><a href="#" id="matches">Matches</a></li>
                 <li><a href="#">Seasonal tickets</a></li>
                 <li><a href="#">My tickets</a></li>
               </ul>
@@ -170,13 +170,15 @@
 
                      </div>
 
-                  </div></div>
+                  </div>
+                </div>
             </div>
           </div>
           <div id="subPageTow" class="hidden">
             <div class="row">
-             <div class="col-md-11">
-                <span class="icon icon-back"></span>
+             <div class="col-md-1"> <span class="icon icon-back"></span></div>
+             <div class="col-md-3 hidden" id="blockShow">choose a block</div>
+             <div id="contentChangeCol" class="col-md-10">
                 <span class="team-name first-player text-center">Al Ahli</span>
                 <img src="images/ahli.png" class="img-responsive">
                 <img src="images/sponsor.png" class="img-responsive">
@@ -215,13 +217,35 @@
             </div>
             </div>
             </div>
+            <div id="add-row">
+              <div class="col-md-3 hidden" id="BlockConetent">
+                <div class="large">Block 118</div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="details">Available Seats</div>
+                    <div>200</div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="details">Total Price</div>
+                    <div>70 -50 SR</div>
+                  </div>
+                </div>
+
+                 <div class="details text-center tick-con">Tickets</div>
+                 <div class="tickets text-center"><li><a href="#">1</a></li><li><a href="#">2</a></li><li class="active"><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li><a href="#">6</a></li></div>
+
+                  <div class="bottom-details"><div id="checkout" class="button btn org-button">Select Seats</div></div>
+
+              </div>
 
 
 
 
             <div class="col-centered">
+             <div id="BlockInfo">
               <div class="text-center">choose a block</div>
               <div class="details text-center"><span class="icon icon-info"></span> you can select more than one</div>
+            </div>
 
               <div class="row stad-area">
                 <div class="col-md-1">
@@ -675,6 +699,97 @@
             <div class="text-center"><li id="circle" class="blue"></li><span>Selected</span><li id="circle" class="orange"></li><span>Reserved</span><li id="circle" class="green"></li><span>Available</span><li id="circle" class="gray"></li><span>Not Available</span></div>
             </div>
           </div>
+          </div>
+          <div id="subPageThree" class="hidden">
+            <div class="row">
+              <div class="col-md-5">
+                 <div class="col-md-12"><span class="icon icon-back" id="Check-back"></span>Check Out</div>
+                  <div class="match">
+                    <div class="col-md-4">
+                      <div class="team first-player"><img src="images/ahli.png" class="img-responsive"></div>
+                      <div class="team-name first-player text-center">Al Ahli</div>
+                     
+                    </div>
+                    <div class="col-md-3">
+                       <div class="team sponser"><img src="images/sponsor.png" class="img-responsive"></div>                   
+                       <div class="team sponser text-center diff-color">VS</div>     
+                    </div>
+                    <div class="col-md-4">
+                      <div class="team second-player"><img src="images/hilal.png" class="img-responsive"></div>
+                      <div class="team-name second-player text-center">Al Hilal</div>    
+                    </div>
+                </div>
+                 <div class="text-center"><span class="icon icon-facebook-placeholder-for-locate-places-on-maps big-icon-map"></span>
+                Riyadh , king Fahed International Stadium</div>
+
+                <div class="row table-checkout">
+                  <div class="col-md-3"><span class="details">Gate</span><br/>4</div>
+                  <div class="col-md-3"><span class="details">Block</span><br/>118</div>
+                  <div class="col-md-2"><span class="details">Row</span><br/>1</div>
+                  <div class="col-md-2"><span class="details">Seat</span><br/>1</div>
+                  <div class="col-md-2"><span class="details">Price</span><br/>70SR</div>
+                  <div class="col-md-3"><span class="details">Gate</span><br/>4</div>
+                  <div class="col-md-3"><span class="details">Block</span><br/>118</div>
+                  <div class="col-md-2"><span class="details">Row</span><br/>1</div>
+                  <div class="col-md-2"><span class="details">Seat</span><br/>1</div>
+                  <div class="col-md-2"><span class="details">Price</span><br/>70SR</div>
+                  <div class="col-md-3"><span class="details">Gate</span><br/>4</div>
+                  <div class="col-md-3"><span class="details">Block</span><br/>118</div>
+                  <div class="col-md-2"><span class="details">Row</span><br/>1</div>
+                  <div class="col-md-2"><span class="details">Seat</span><br/>1</div>
+                  <div class="col-md-2"><span class="details">Price</span><br/>70SR</div>
+                </div>
+
+                <div class="table-checkout text-center">
+                  <div class="details">Price</div>
+                  <div class="price">240 SR</div>
+                </div>
+                <div class="bottom-details">
+                 <div class="button btn org-button" id="secure-payment">Buy</div>
+               </div>
+              </div>
+
+            <div class="col-md-7 stad-bg"></div>
+              <div class="inner cover">  
+                <div class="match stad">
+                    <div class="col-md-4">
+                      <div class="team first-player"><img src="images/ahli.png" class="img-responsive"></div>
+                      <div class="team-name first-player text-center">Al Ahli</div>
+                     
+                    </div>
+                    <div class="col-md-3">
+                       <div class="team sponser"><img src="images/sponsor.png" class="img-responsive"></div>                   
+                       <div class="team sponser text-center diff-color">VS</div>     
+                    </div>
+                    <div class="col-md-4">
+                      <div class="team second-player"><img src="images/hilal.png" class="img-responsive"></div>
+                      <div class="team-name second-player text-center">Al Hilal</div>    
+                    </div>
+                    <div class="match-details">
+                         <div class="details">Friday 3 Nov 2016 &nbsp;<span class="lighter">|</span >&nbsp;8:20 PM &nbsp;<span class="lighter"></span></div>
+                         <br>
+                         <div class="text-center">Lorem Ipsum is simply dummy text of <br/>the printing and typesetting industry. Lorem Ipsum <br/>has been the industry's standard dummy.</div>
+
+                     </div>
+
+                  </div>
+                </div>
+                </div>
+          </div>
+
+          <div id="subPagefour" class="hidden">
+            <div class="purshase-done text-center">
+              <span class="icon icon-confirm-purchase"></span>
+              <br/>
+              Thank you for your purchase
+            </div>
+          </div>
+
+
+
+
+
+
           </div>
 
 
